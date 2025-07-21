@@ -1,0 +1,149 @@
+.body {
+    background: #13141F;
+}
+
+.bieudo {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.bieudo-left {
+  display: flex;
+  column-gap: 0px;
+  align-items: stretch; /* Đảm bảo chiều cao các phần bằng nhau */
+  height: 208px;
+  width:1102px;
+  flex:1;
+  max-width: 0%;
+}
+
+/* Container cho cột icon + ảnh biểu đồ */
+
+/* Cột icon dọc */
+.bieudo-icons-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Icon nằm sát trên */
+  background: #1E1E25;
+  gap: 0px;
+  height: auto; /* Chiều cao bằng cha */
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+/* Giới hạn kích thước icon */
+.bieudo-icons-column img {
+  width: 36px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Căn giữa icon */
+}
+
+/* Cột ảnh biểu đồ */
+.bieudo-image {
+  min-height: 100%; /* Chiều cao bằng cha */
+}
+
+.bieudo-image img {
+  max-width: 950px;
+  width: 1102px;
+  height: 208px; /* Ảnh phủ hết chiều cao cha */
+  object-fit: contain;
+  display: block;
+  padding: 0px;
+  margin-bottom: 0px;
+  flex: 1 1 auto;
+  background: black;
+}
+
+/* Cột nội dung bên phải */
+.bieudo-info-panel {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 980px;
+  height: 100%;          /* Kéo dài bằng chiều cao cha */
+  box-sizing: border-box;
+  padding: 8px 12px;     /* Giảm padding nếu muốn nhỏ hơn */
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #13141F;
+  /*position: relative;*/
+}
+
+
+/* Tabs */
+.bieudo-tabs {
+  display: flex;
+  border-bottom: 1px solid #2d2f4a;
+  margin-bottom: 1px;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  height: 44px;
+  align-items: center;
+  /*position: absolute;*/
+}
+
+.bieudo-tab {
+  color: #fff;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+border: none;
+background: #13141F;
+}
+
+.bieudo-tab-active {
+  color: #9580FF;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+  background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+ border: none;
+ padding: 12px;
+}
+
+/* Nội dung tĩnh */
+.bieudo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  color: #99A1B7;
+  height: 100%;
+  margin-top: -10px;
+}
+
+.info-row span:last-child {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding-right: 12px;
+}
+
+.xanh {
+  color: #17C653;
+  padding-right: 12px;
+}

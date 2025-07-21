@@ -1,0 +1,42 @@
+.app-container {
+  max-width: 1920px; /* hoặc bạn muốn bao nhiêu */
+  margin: 0 auto; /* canh giữa trang */
+  padding: 0 20px; /* lề trái, phải đều 20px */
+  box-sizing: border-box;
+  background: black;
+}
+
+
+.main-content {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.left-column {
+  flex: 0 0 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  margin-top: 12px;
+}
+
+.left-column > * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.right-column {
+  flex: 0 0 20%;
+  min-width: 0;
+  margin-top: 12px;
+}
+
+/* đảm bảo OrderForm cũng full width cột */
+.order-form {
+  width: 100%;
+  box-sizing: border-box;
+}

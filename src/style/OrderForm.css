@@ -1,0 +1,364 @@
+.order-form {
+  background-color: #13141F;
+  color: #ccc;
+  max-width: 320px;
+  margin: 0;
+  padding: 8px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.order-form h3 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.order-form label {
+  display: block;
+  margin: 12px 0 6px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.order-form select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #222338;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.order-type {
+  margin: 12px 0;
+  display: flex;
+  background-color: #222338;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 40px !important;
+}
+
+.order-type button {
+  flex: 1;
+  border: none;
+  background: none;
+  color: #aaa;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.order-type button.active {
+  background-color: #4b3e9d;
+  color: #d2ceff;
+  font-weight: 700;
+}
+
+.order-mode {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.order-mode button {
+  flex: 1;
+  border-radius: 20px;
+  border: none;
+  background-color: #222338;
+  color: #ddd;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.order-mode  {
+  display: flex;
+  gap: 8px;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+.price-input,
+.quantity-input {
+  display: flex;
+  align-items: center;
+  background-color: #222338;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.price-input button,
+.quantity-input button {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+  width: 36px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.price-input button:hover,
+.quantity-input button:hover {
+  color: #fff;
+}
+
+.price-input input,
+.quantity-input input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  padding: 8px 0;
+}
+
+.position-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.position-buttons button {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.setup {
+  display: flex;
+  height: 48px;
+}
+
+.gradient {
+  padding: 3px 16px;
+  margin-top: 0;
+  background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+  gap: 8px;
+  font-size: 14px;
+  border-bottom: 2px solid #914bfe;
+  width: 100px;
+}
+
+.padding {
+  padding: 3px 16px;
+  margin-top: 0;
+  margin-left: 0;
+  gap: 8px;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #fff;
+width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+
+}
+
+.title {
+  color: rgba(153, 161, 183, 1);
+  font-size: 12px;
+  font-family:  Beau Sans;
+  font-weight: 500;
+  style: medium;
+  line-height: 16px;
+  height: 20px;
+}
+
+.option {
+  color: rgba(255, 255, 255, 1);
+  font-family: BT Beau Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  border-radius: 100px;      
+  gap: 8px;                   
+  background-color: rgba(36, 37, 60, 1); 
+  height: 44px;
+  width: 100%;
+  justify-content: space-between; 
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;         /* bỏ viền */
+  box-shadow: none;     /* bỏ mọi hiệu ứng đổ bóng */
+}
+
+.op {
+  width: 20px;
+  height: 20px;
+}
+
+
+.order-type {
+border-radius: 100px;
+opacity: 1;
+padding: 0px;
+background:rgba(5, 6, 15, 1);
+height: 40px;
+width: 100%;
+margin-top: 16px;
+display: flex;
+}
+
+.Lenh {
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+background-color: rgba(36, 37, 60, 1) !important;
+border-radius: 16px;
+height: 40px;
+}
+
+.lenh {
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+height: 40px;
+align-items: center;
+}
+
+.ok {
+  margin-left: 6px;
+  align-items: center;
+}
+
+.Loailenh {
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(153, 161, 183, 1);
+}
+
+.mode-active {
+  background: #6142FE !important;
+  color: #FFFFFF;
+  height: 36px;
+}
+
+.mode {
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+color: #FFFFFF;
+height: 36px;
+}
+
+.input-group {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-label {
+font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #99A1B7;
+}
+
+.input-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24253C;
+  border-radius: 100px;
+  height: 44px;
+  width: 100%;
+  gap: 8px;
+}
+
+.btn {
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn:last-child {
+  margin-right: 14px;  /* Thêm khoảng cách bên phải cho dấu cộng */
+}
+
+.btn-long, .btn-short {
+  flex:1;
+  font-family: BT Beau Sans;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+color: #fff;
+line-height: 20px;
+lette-spacing: 0%;
+}
+
+.position-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-long {
+  background-color:#17C653 !important;
+}
+
+.btn-short {
+  background-color: #F8285A !important;
+}

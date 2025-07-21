@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  background-color: #13141F;
+  color: #fff;
+}
+
+.order-book-tabs {
+  padding: 0px;
+  font-size: 13px;
+  background: #13141F;
+  border-radius: 8px;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #78829D;
+width: auto;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #ccc;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.tabs button.active {
+  color: #914bfe;
+  border-bottom: 2px solid #914bfe;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #13141F;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #141622;
+  color: #99A1B7;
+}
+
+th, td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #2a2c3d;
+  text-align: left;
+  white-space: nowrap;
+}
+
+tbody tr:hover {
+  background-color: #222436;
+}
+
+/* === Cột Lệnh (Long / Short) === */
+.long {
+  color: #00c853;
+  font-weight: bold;
+}
+
+.short {
+  color: #ef5350;
+  font-weight: bold;
+}
+
+/* === Cột Trạng thái === */
+.text-yellow {
+  color: #F6B100;
+  font-weight: bold;
+}
+
+.text-orange {
+  color: #FF6F1E;
+  font-weight: bold;
+}
+
+.text-blue {
+  color: #1B84FF;
+  font-weight: bold;
+}
+
+.text-green {
+  color: #17C653;
+  font-weight: bold;
+}
+
+.text-red {
+  color: #F8285A;
+  font-weight: bold;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+/* === Icon và chức năng === */
+.header-icon, .row-icon, .action-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.kinhlup, .funnel {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.th-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+.highlight-id {
+  color: #1B84FF; 
+  font-weight: bold;
+}
+
+.action-icon {
+  cursor: pointer;
+  margin-right: 24px; /* khoảng cách giữa các icon */
+  vertical-align: middle;
+  
+}
+
+/* Căn phải cho cột chức năng */
+td.actions-cell {
+  text-align: right;
+}
+
+.action-icon:last-child {
+  margin-right: 0; /* icon cuối không cần margin bên phải */
+}
+
+.th-with-icon img {
+  margin-left: 4px; /* khoảng cách icon so với chữ */
+  vertical-align: middle;
+}
+
+.order-tabs {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  gap: 12px;  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+
+}
+
+
+
+.thuong {
+  background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+  color: #9580FF;
+  border: none;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+width: 192px;
+border-bottom: 2px solid #914bfe;
+}
+
+.dieukien {
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+color: #fff;
+border: none;
+background: none;
+width: 199px;
+}
+
+.full {
+  width: 20px;
+  height: 20px;
+  margin-left: 885px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.tta {
+  color: #fff;
+  width: 136px;
+}
+.ttb {
+  color: #fff;
+  width: 80px;
+}
+.ttc {
+  color: #fff;
+  width: 80px;
+}
+.ttd {
+  color: #fff;
+  width: 56px;
+}
+.tte {
+  color: #fff;
+  width: 80px;
+}
+
+.ttf {
+  color: #fff;
+  width: 80px;
+}
+.ttg {
+  color: #fff;
+  width: 80px;
+}
+.tth {
+    color: #fff;
+  width: 232px;
+}
+
+.order {
+  width: 80px;
+}
+
+.order-book-tabs table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
