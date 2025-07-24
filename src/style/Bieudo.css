@@ -92,9 +92,10 @@
   /*position: absolute;*/
 }
 
+
 .bieudo-tab {
   color: #fff;
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 14px;
@@ -107,7 +108,7 @@ background: #13141F;
 
 .bieudo-tab-active {
   color: #9580FF;
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 14px;
@@ -131,7 +132,27 @@ text-align: center;
   gap: 8px;
   justify-content: space-between;
   margin-top: 4px;
+  max-height: 150px;
+  overflow-y: auto;
 }
+
+.bieudo-content::-webkit-scrollbar {
+  width: 4px; 
+}
+
+.bieudo-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);  
+  border-radius: 8px;
+  max-height: 40px;
+  height: 40;
+  opacity: 0.3;
+  border-radius: 100px;
+}
+
+.bieudo-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 
 .info-row {
   display: flex;

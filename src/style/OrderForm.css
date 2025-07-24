@@ -2,7 +2,7 @@
   background-color: #13141F;
   color: #ccc;
   max-width: 320px;
-  margin: 12px;
+  margin: 0px 8px;
   padding: 8px;
   border-radius: 10px;
   height: 100%;
@@ -80,7 +80,7 @@
 .order-mode  {
   display: flex;
   gap: 8px;
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 14px;
@@ -164,6 +164,8 @@ text-align: center;
   align-items: center;
   display: flex;
   color: rgba(149, 128, 255, 1) !important;
+    white-space: nowrap;
+
 }
 
 .padding {
@@ -171,7 +173,7 @@ text-align: center;
   margin-top: 0;
   margin-left: 0;
   gap: 8px;
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500 !important;
 font-style: Medium;
 font-size: 14px;
@@ -197,7 +199,7 @@ align-items: center;
 
 .option {
   color: rgba(255, 255, 255, 1);
-  font-family: BT Beau Sans;
+  font-family: Lexend;
   font-weight: 500;
   font-style: Medium;
   font-size: 14px;
@@ -234,7 +236,7 @@ display: flex;
 }
 
 .Lenh {
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 12px;
@@ -248,7 +250,7 @@ height: 40px;
 }
 
 .lenh {
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 12px;
@@ -265,7 +267,7 @@ align-items: center;
 }
 
 .Loailenh {
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 12px;
@@ -282,7 +284,7 @@ color: rgba(153, 161, 183, 1);
 }
 
 .mode {
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 14px;
@@ -301,7 +303,7 @@ height: 36px;
 }
 
 .input-label {
-font-family: BT Beau Sans;
+font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 12px;
@@ -348,7 +350,7 @@ color: #99A1B7;
 
 .btn-long, .btn-short {
   flex:1;
-  font-family: BT Beau Sans;
+  font-family: Lexend;
 font-weight: 700;
 font-style: Bold;
 font-size: 14px;

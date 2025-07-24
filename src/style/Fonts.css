@@ -1,0 +1,12 @@
+/* src/styles/fonts.css */
+@font-face {
+  font-family: 'Lexend';
+  src: url('../assets/fonts/Lexend.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, .font-lexend {
+  font-family: 'Lexend', sans-serif;
+}
