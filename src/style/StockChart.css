@@ -4,6 +4,8 @@
   color: white;
   border-radius: 8px;
   width:auto;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .stock-info-grid {
@@ -71,7 +73,7 @@
 .layout {
   display: flex;
   flex-direction: column;
-  padding: 4px 6px;
+  padding: 4px 12px;
   border-radius: 6px;
   background-color: #1d2235;
   box-sizing: border-box;
