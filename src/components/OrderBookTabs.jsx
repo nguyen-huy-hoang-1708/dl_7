@@ -38,8 +38,7 @@ const ordersData = [
     price: 10.0,
     status: 'Chờ gửi lên Sở',
     cancelTime: '--',
-        orderKind: 'Lệnh điều kiện',
-
+    orderKind: 'Lệnh điều kiện',
   },
   {
     id: 254806,
@@ -54,8 +53,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp 1 phần',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -70,8 +68,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp hết',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -86,8 +83,7 @@ const ordersData = [
     price: 10.0,
     status: 'Lệnh đã bị huỷ',
     cancelTime: '03/05/2021, 01:00',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -102,8 +98,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp hết',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -118,8 +113,7 @@ const ordersData = [
     price: 10.0,
     status: 'Lệnh đã bị huỷ',
     cancelTime: '03/05/2021, 01:00',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -134,8 +128,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp hết',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -150,8 +143,7 @@ const ordersData = [
     price: 10.0,
     status: 'Lệnh đã bị huỷ',
     cancelTime: '03/05/2021, 01:00',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -166,8 +158,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp hết',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 254806,
@@ -182,8 +173,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp 1 phần',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -198,8 +188,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp hết',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 254806,
@@ -214,8 +203,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp 1 phần',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -230,8 +218,7 @@ const ordersData = [
     price: 10.0,
     status: 'Khớp hết',
     cancelTime: '--',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
   {
     id: 268918,
@@ -246,8 +233,7 @@ const ordersData = [
     price: 10.0,
     status: 'Lệnh đã bị huỷ',
     cancelTime: '03/05/2021, 01:00',
-        orderKind: 'Lệnh thường',
-
+    orderKind: 'Lệnh thường',
   },
 ];
 

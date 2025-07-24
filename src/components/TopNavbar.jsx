@@ -10,8 +10,8 @@ export default function TopNavbar() {
     <div className="top-navbar">
       <div className="navbar-left">
         <img src={logo} alt="Logo" className="logo" />
-        <div className="menu-tabs">
-          <div className="gradient">Giao dịch phát sinh</div>
+        <div className="menu-tabss">
+          <div className="gradients">Giao dịch phái sinh</div>
           <div>Chuyển tiền</div>
           <div>Sao kê tiền</div>
           <div>Danh mục tài sản</div>

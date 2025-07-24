@@ -39,7 +39,7 @@ function StockChart() {
   </div>
   <div className="layout">
     <div className="label">+/-</div>
-    <div className="price-yellơ">0.00</div>
+    <div className="price-yellow">0.00</div>
   </div>
   <div className="layout">
     <div className="label">+/-(%)</div>

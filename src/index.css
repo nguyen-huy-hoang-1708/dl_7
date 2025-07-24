@@ -1,7 +1,12 @@
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+
+
 .app-container {
-  max-width: 1920px; /* hoặc bạn muốn bao nhiêu */
-  margin: 0 auto; /* canh giữa trang */
-  padding: 0 20px; /* lề trái, phải đều 20px */
+  max-width: 1920px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
   box-sizing: border-box;
   background: black;
 }
@@ -35,8 +40,33 @@
   margin-top: 12px;
 }
 
-/* đảm bảo OrderForm cũng full width cột */
 .order-form {
   width: 100%;
   box-sizing: border-box;
+}
+
+
+.left-column {
+  flex: 1;
+  min-width: 0;
+}
+
+.right-column {
+  width: 320px;
+}
+
+@media (max-width: 768px) {
+  .right-column {
+    width: 100%;
+  }
+}
+/* Responsive layout */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
 }

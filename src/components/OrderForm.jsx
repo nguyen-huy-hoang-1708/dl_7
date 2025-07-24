@@ -6,7 +6,7 @@ function OrderForm() {
   return (
     <div className="order-form">
       <div className="setup">
-        <h3 className="gradient" style={{ color: '#6142FE' }}>Giao dịch</h3>
+        <h3 className="gradient" >Giao dịch</h3>
         <h3 className="padding">Cài đặt</h3>
       </div>
 

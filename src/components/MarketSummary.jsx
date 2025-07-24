@@ -90,7 +90,7 @@ function MarketSummary() {
           {/* Hàng 1: name + value */}
           <div className="row row-1">
             <div className="name">{item.name}</div>
-            <div className="value">{item.value}</div>
+            <div className="value" style={{ color: index === 2 ? '#99A1B7' : '#17C653' }}>{item.value}</div>
           </div>
 
           {/* Hàng 2: shares + volume */}

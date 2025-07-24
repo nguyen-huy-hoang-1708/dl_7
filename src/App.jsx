@@ -7,6 +7,7 @@ import OrderBookTabs from './components/OrderBookTabs';
 import Bieudo from './components/Bieudo';
 import Footer from './components/Footer';
 import './index.css';
+/*import './style/Responsive.css';*/
 function App() {
   return (
     <div className="app-container">

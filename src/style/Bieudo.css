@@ -18,7 +18,7 @@
 .bieudo-left {
   display: flex;
   column-gap: 0px;
-  align-items: stretch; /* Đảm bảo chiều cao các phần bằng nhau */
+  align-items: stretch; 
   height: 208px;
   width:1102px;
   flex:1;
@@ -31,10 +31,10 @@
 .bieudo-icons-column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Icon nằm sát trên */
+  justify-content: flex-start; 
   background: #1E1E25;
   gap: 0px;
-  height: auto; /* Chiều cao bằng cha */
+  height: auto; 
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -44,18 +44,18 @@
   width: 36px;
   height: auto;
   display: block;
-  margin: 0 auto; /* Căn giữa icon */
+  margin: 0 auto; 
 }
 
 /* Cột ảnh biểu đồ */
 .bieudo-image {
-  min-height: 100%; /* Chiều cao bằng cha */
+  min-height: 100%; 
 }
 
 .bieudo-image img {
   max-width: 950px;
   width: 1102px;
-  height: 208px; /* Ảnh phủ hết chiều cao cha */
+  height: 208px; 
   object-fit: contain;
   display: block;
   padding: 0px;
@@ -69,10 +69,10 @@
   width: 360px;
   display: flex;
   flex-direction: column;
-  margin-left: 980px;
-  height: 100%;          /* Kéo dài bằng chiều cao cha */
+  margin-left: auto;
+  height: 100%;         
   box-sizing: border-box;
-  padding: 8px 12px;     /* Giảm padding nếu muốn nhỏ hơn */
+  padding: 8px 12px;     
   justify-content: space-between;
   border-radius: 8px;
   background: #13141F;
@@ -115,8 +115,13 @@ line-height: 20px;
 letter-spacing: 0%;
 text-align: center;
   background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
- border: none;
- padding: 12px;
+  border-bottom: 2px solid #914bfe;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+ height:44px;
+ gap: 24px;
+ align-items: center;
 }
 
 /* Nội dung tĩnh */
@@ -147,3 +152,107 @@ text-align: center;
   color: #17C653;
   padding-right: 12px;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 1324px) {
+  .bieudo {
+    flex-direction: column;
+  }
+
+  .bieudo-left {
+    width: 100%;
+    flex-direction: column;
+    max-width: 100%;
+    display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex: 1 1 60%;  
+  flex-wrap: wrap;
+  }
+
+  .bieudo-icons-column {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px;
+  }
+
+  .bieudo-icons-column img {
+    width: 32px;
+    height: auto;
+  }
+
+  .bieudo-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  max-width: 100%;    
+  }
+
+  .bieudo-info-panel {
+    margin-left: 0;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .bieudo-tabs {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 8px;
+  }
+
+  .bieudo-tab,
+  .bieudo-tab-active {
+    width: 48%;
+    padding: 10px;
+    height: auto;
+    font-size: 13px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-top: 0;
+  }
+
+  .info-row span:last-child {
+    padding-right: 0;
+  }
+
+  .xanh {
+    padding-right: 0;
+  }
+
+  @media (max-width: 768px) {
+  .bieudo {
+    flex-direction: column;
+  }
+
+  .bieudo-info-panel {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px;
+  }
+
+  .bieudo-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bieudo-left {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+}
+
+
+
+
+
+
+
+
