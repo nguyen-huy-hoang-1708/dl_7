@@ -246,7 +246,7 @@ td.actions-cell {
 
 
 /*RESPONSIVE*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .order-book-tabs {
     width: 100%;
     padding: 8px;

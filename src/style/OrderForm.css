@@ -371,13 +371,30 @@ letter-spacing: 0%;
 }
 
 
+.menu-toggle-label {
+  display: none;
+}
+
 
 /*RESPONSIVE*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .menu-toggle-label {
+    display: inline-block;
+    background: #13141F;
+    color: #fff;
+    border: none;
+  }
+
+
   .order-form {
     max-width: 100%;
     padding: 12px;
     border-radius: 8px;
+    height: 100%;
+  }
+
+  .order-type {
+    display: none;
   }
 
   .order-form h3 {

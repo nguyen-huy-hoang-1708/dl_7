@@ -24,7 +24,7 @@ function Bieudo() {
           <img src={Six} alt="six" />
         </div>
         <div className="bieudo-image">
-          <img src={Bieu_do} alt="Biểu đồ" />
+          <img src={Bieu_do} alt="Biểu đồ" className="size"/>
         </div>
       </div>
       

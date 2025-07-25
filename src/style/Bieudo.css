@@ -53,8 +53,9 @@
 }
 
 .bieudo-image img {
-  max-width: 910px;
-  width: 1102px;
+  max-width: 53vw;
+  width: auto;
+  width: 1098px;
   height: 208px; 
   object-fit: contain;
   display: block;
@@ -63,6 +64,7 @@
   flex: 1 1 auto;
   background: black;
 }
+
 
 /* Cột nội dung bên phải */
 .bieudo-info-panel {
@@ -175,39 +177,49 @@
 }
 
 /*RESPONSIVE*/
-@media (max-width: 1324px) {
+@media (max-width: 1024px) {
   .bieudo {
     flex-direction: column;
+    display: flex;
   }
 
   .bieudo-left {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 100%;
     display: flex;
-    flex-direction: row;
     gap: 16px;
-    flex: 1 1 60%;  
     flex-wrap: wrap;
   }
 
+  .size {
+    object-fit: contain; 
+    display: block;
+  }
+
   .bieudo-icons-column {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 8px;
   }
 
   .bieudo-icons-column img {
-    width: 32px;
+    width: 30px;
     height: auto;
+    display: flex;
+    flex-direction: row;
   }
 
   .bieudo-image {
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: auto;
     object-fit: contain;
     display: block;
-    max-width: 100%;    
+    max-width: 100%; 
+    overflow-x: auto;
   }
 
   .bieudo-info-panel {

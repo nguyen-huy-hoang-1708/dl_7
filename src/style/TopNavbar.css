@@ -193,5 +193,7 @@
 
   .logo {
     margin-bottom: 8px;
+    align-items: center;
+    text-align: center;
   }
 }
