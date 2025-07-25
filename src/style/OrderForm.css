@@ -81,13 +81,12 @@
   display: flex;
   gap: 8px;
   font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
-
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .price-input,
@@ -164,8 +163,7 @@ text-align: center;
   align-items: center;
   display: flex;
   color: rgba(149, 128, 255, 1) !important;
-    white-space: nowrap;
-
+  white-space: nowrap;
 }
 
 .padding {
@@ -174,17 +172,17 @@ text-align: center;
   margin-left: 0;
   gap: 8px;
   font-family: Lexend;
-font-weight: 500 !important;
-font-style: Medium;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-color: #fff;
-width: 100%;
+  font-weight: 500 !important;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #fff;
+  width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
-height: 100%;
-display: flex;
-align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .title {
@@ -236,7 +234,7 @@ display: flex;
 }
 
 .Lenh {
-  font-family: Lexend;
+font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 12px;
@@ -250,7 +248,7 @@ height: 40px;
 }
 
 .lenh {
-  font-family: Lexend;
+font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 12px;
@@ -267,7 +265,7 @@ align-items: center;
 }
 
 .Loailenh {
-  font-family: Lexend;
+font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 12px;
@@ -284,7 +282,7 @@ color: rgba(153, 161, 183, 1);
 }
 
 .mode {
-  font-family: Lexend;
+font-family: Lexend;
 font-weight: 500;
 font-style: Medium;
 font-size: 14px;
@@ -349,8 +347,8 @@ color: #99A1B7;
 }
 
 .btn-long, .btn-short {
-  flex:1;
-  font-family: Lexend;
+flex:1;
+font-family: Lexend;
 font-weight: 700;
 font-style: Bold;
 font-size: 14px;

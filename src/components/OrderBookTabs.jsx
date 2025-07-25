@@ -1,12 +1,12 @@
 import React from 'react';
 import '../style/OrderBookTabs.css';
-import checkbox from '../assets/checkbox.png'; 
-import nocheckbox from '../assets/nocheckbox.png';
+import checkbox from '../assets/Checkbox.png'; 
+import nocheckbox from '../assets/Nocheckbox.png';
 import Trash from '../assets/Trash.png'; 
-import edit from '../assets/edit.png';   
-import kinhlup from '../assets/kinhlup.png';
+import edit from '../assets/Edit.png';   
+import kinhlup from '../assets/Kinhlup.png';
 import Funnel from '../assets/Funnel.png';
-import full from '../assets/full.png';
+import full from '../assets/Full.png';
 
 const ordersData = [
   {

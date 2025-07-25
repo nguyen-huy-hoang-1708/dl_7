@@ -18,14 +18,13 @@
 .status-label {
   opacity: 0.8;
   font-family: BT Beau Sans;
-font-weight: 400;
-font-style: Regular;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0%;
-text-align: center;
-color: #78829D;
-
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #78829D;
 }
 
 .status-icon {
@@ -35,27 +34,25 @@ color: #78829D;
 
 .status-value {
   color: #17C653;
-    font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0%;
-text-align: center;
-
+  font-family: Lexend;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .footer-right {
-color:#F6B100;
+  color:#F6B100;
   font-weight: 500;
   font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0%;
-text-align: center;
-
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 

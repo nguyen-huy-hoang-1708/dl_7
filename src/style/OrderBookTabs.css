@@ -10,14 +10,14 @@ body {
   background: #13141F;
   border-radius: 8px;
   font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #78829D;
-width: auto;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #78829D;
+  width: auto;
 }
 
 .tabs {
@@ -170,28 +170,28 @@ td.actions-cell {
   color: #9580FF;
   border: none;
   font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
-width: 192px;
-border-bottom: 2px solid #914bfe;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 192px;
+  border-bottom: 2px solid #914bfe;
 }
 
 .dieukien {
   font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
-color: #fff;
-border: none;
-background: none;
-width: 199px;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background: none;
+  width: 199px;
 }
 
 .full {

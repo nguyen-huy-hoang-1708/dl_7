@@ -1,13 +1,13 @@
 import React from 'react';
 import '../style/Bieudo.css';
-import bieudo from '../assets/bieudo.jpg';
-import one from '../assets/one.png';
-import two from '../assets/two.png';
-import three from '../assets/three.png';
-import four from '../assets/four.png';
-import five from '../assets/five.png';
-import six from '../assets/six.png';
-import quen from '../assets/quen.png';
+import Bieu_do from '../assets/Bieu_do.jpg';
+import One from '../assets/One.png';
+import Two from '../assets/Two.png';
+import Three from '../assets/Three.png';
+import Four from '../assets/Four.png';
+import Five from '../assets/Five.png';
+import Six from '../assets/Six.png';
+import Quen from '../assets/Quen.png';
 
 function Bieudo() {
   return (
@@ -15,16 +15,16 @@ function Bieudo() {
       {/* Phần bên trái: Icon + Biểu đồ */}
       <div className="bieudo-left">
         <div className="bieudo-icons-column">
-          <img src={one} alt="one" />
-          <img src={quen} alt="quen" />
-          <img src={two} alt="two" />
-          <img src={three} alt="three" />
-          <img src={four} alt="four" />
-          <img src={five} alt="five" />
-          <img src={six} alt="six" />
+          <img src={One} alt="one" />
+          <img src={Quen} alt="quen" />
+          <img src={Two} alt="two" />
+          <img src={Three} alt="three" />
+          <img src={Four} alt="four" />
+          <img src={Five} alt="five" />
+          <img src={Six} alt="six" />
         </div>
         <div className="bieudo-image">
-          <img src={bieudo} alt="Biểu đồ" />
+          <img src={Bieu_do} alt="Biểu đồ" />
         </div>
       </div>
       

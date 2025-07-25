@@ -105,8 +105,8 @@
   height: 120%;
   display: flex;
   align-items: center;
-border-bottom: 2px solid #914bfe;
-padding: 0 12px;
+  border-bottom: 2px solid #914bfe;
+  padding: 0 12px;
 }
 
 .vn {
@@ -118,7 +118,6 @@ padding: 0 12px;
   letter-spacing: 0%;
   text-align: center;
 }
-
 
 
 /*RESPONSIVE*/

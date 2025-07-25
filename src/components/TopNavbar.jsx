@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/TopNavbar.css';
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 import Flag from '../assets/Flag.png';
 import Option from '../assets/Option.png';
 import SignOut from '../assets/SignOut.png';

@@ -20,19 +20,17 @@ function App() {
 <div style={{ padding: 2 }}>
   <StockChart />
 </div>
-      <div className="main-content">
-        <div className="left-column">
-          <Bieudo />
-          <OrderBookTabs />
-        </div>
-        <div className="right-column">
-          <OrderForm />
-        </div>
-      </div>
-       <Footer />
+  <div className="main-content">
+    <div className="left-column">
+      <Bieudo />
+      <OrderBookTabs />
     </div>
+    <div className="right-column">
+      <OrderForm />
+    </div>
+  </div>
+  <Footer />
+</div>
   );
 }
-
-
 export default App;

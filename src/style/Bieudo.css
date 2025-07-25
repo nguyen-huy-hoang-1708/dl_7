@@ -53,7 +53,7 @@
 }
 
 .bieudo-image img {
-  max-width: 950px;
+  max-width: 910px;
   width: 1102px;
   height: 208px; 
   object-fit: contain;
@@ -96,33 +96,33 @@
 .bieudo-tab {
   color: #fff;
   font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
-border: none;
-background: #13141F;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  background: #13141F;
 }
 
 .bieudo-tab-active {
   color: #9580FF;
   font-family: Lexend;
-font-weight: 500;
-font-style: Medium;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
   background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
   border-bottom: 2px solid #914bfe;
   border-top: none;
   border-left:none;
   border-right: none;
- height:44px;
- gap: 24px;
- align-items: center;
+  height:44px;
+  gap: 24px;
+  align-items: center;
 }
 
 /* Nội dung tĩnh */
@@ -185,10 +185,10 @@ text-align: center;
     flex-direction: column;
     max-width: 100%;
     display: flex;
-  flex-direction: row;
-  gap: 16px;
-  flex: 1 1 60%;  
-  flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+    flex: 1 1 60%;  
+    flex-wrap: wrap;
   }
 
   .bieudo-icons-column {
@@ -207,7 +207,7 @@ text-align: center;
     height: auto;
     object-fit: contain;
     display: block;
-  max-width: 100%;    
+    max-width: 100%;    
   }
 
   .bieudo-info-panel {

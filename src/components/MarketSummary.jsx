@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/MarketSummary.css';
 import Up from '../assets/Up.png';
 import Down from '../assets/Down.png';
-import vuong from '../assets/vuong.png';
+import vuong from '../assets/Vuong.png';
 
 const marketData = [
   {
