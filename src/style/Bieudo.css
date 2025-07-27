@@ -53,11 +53,12 @@
 }
 
 .bieudo-image img {
-  max-width: 53vw;
+  /*max-width: 53vw;*/
   width: auto;
-  width: 1098px;
+  /*width: 1098px;*/
+  width: 53vw;
   height: 208px; 
-  object-fit: contain;
+  object-fit: fill;
   display: block;
   padding: 0px;
   margin-bottom: 0px;
@@ -179,7 +180,7 @@
 /*RESPONSIVE*/
 @media (max-width: 1024px) {
   .bieudo {
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
   }
 
@@ -192,20 +193,17 @@
     flex-wrap: wrap;
   }
 
-  .size {
-    object-fit: contain; 
-    display: block;
-  }
 
   .bieudo-icons-column {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;/**/
     justify-content: space-around;
+    width: 100%;
     padding: 8px;
   }
 
   .bieudo-icons-column img {
-    width: 30px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -215,11 +213,17 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    height: auto;
-    object-fit: contain;
     display: block;
     max-width: 100%; 
-    overflow-x: auto;
+    height: 100%;
+    overflow-x:hidden;
+  }
+
+  .size {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
   }
 
   .bieudo-info-panel {
@@ -231,8 +235,11 @@
   .bieudo-tabs {
     flex-wrap: wrap;
     height: auto;
-    gap: 8px;
+    gap: 4px;
+    grid-template-columns: repeat(2, 1fr); 
+    display: grid;
   }
+
 
   .bieudo-tab,
   .bieudo-tab-active {
@@ -274,7 +281,7 @@
   }
 
   .bieudo-left {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     max-width: 100%;
   }
