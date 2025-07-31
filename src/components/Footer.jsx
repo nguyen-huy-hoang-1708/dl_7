@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Footer.css';
-import User from '../assets/User.png'; 
+import User from '../assets/User.svg'; 
 
 export default function Footer() {
   return (

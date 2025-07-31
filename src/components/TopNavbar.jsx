@@ -1,9 +1,9 @@
 import React from 'react';
 import '../style/TopNavbar.css';
-import logo from '../assets/Logo.png';
+import logo from '../assets/Logo.svg';
 import Flag from '../assets/Flag.png';
-import Option from '../assets/Option.png';
-import SignOut from '../assets/SignOut.png';
+import Option from '../assets/Option.svg';
+import SignOut from '../assets/SignOut.svg';
 
 export default function TopNavbar() {
   return (
@@ -31,7 +31,9 @@ export default function TopNavbar() {
         <div className="vn">VN</div>
         <img src={Option} alt="Option" className="Option-icon" />
       </div>
-      <img src={SignOut} alt="SignOut" className="SignOut" />
+      <div className="Out">
+        <img src={SignOut} alt="SignOut" className="SignOut" />
+      </div>
 
     </div>
   );

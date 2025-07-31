@@ -2,11 +2,11 @@ import React from 'react';
 import '../style/OrderBookTabs.css';
 import checkbox from '../assets/Checkbox.png'; 
 import nocheckbox from '../assets/Nocheckbox.png';
-import Trash from '../assets/Trash.png'; 
-import edit from '../assets/Edit.png';   
-import kinhlup from '../assets/Kinhlup.png';
-import Funnel from '../assets/Funnel.png';
-import full from '../assets/Full.png';
+import Trash from '../assets/Trash.svg'; 
+import edit from '../assets/Edit.svg';   
+import kinhlup from '../assets/Kinhlup.svg';
+import Funnel from '../assets/Funnel.svg';
+import full from '../assets/Full.svg';
 
 const ordersData = [
   {
@@ -263,10 +263,13 @@ function OrderBookTabs() {
         <button className="dieukien">Danh sách lệnh điều kiện</button>
         <img src={full} alt="full" className="full" />
       </div>
+      <div className="Hidden">
+        <span> SUMMARY TABLE </span>
+       </div>
 
       <table>
         <thead>
-          <tr>
+          <tr className="tr">
             <th><img src={nocheckbox} alt="tick" className="header-icon" /></th>
             <th>
               <span className="th-with-icon">

@@ -1,148 +1,75 @@
 .stock-chart {
-  padding: 20px;
   background-color: #13141F;
-  color: white;
+  padding-top: 0px;
   border-radius: 8px;
-  width:auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+  height: 60px;
+  align-items: center;
   margin-left: 12px;
   margin-right: 12px;
 }
 
-.stock-info-grid {
+.stock-row-scroll {
   display: grid;
-  grid-template-columns: repeat(13, 1fr);
+  grid-template-columns: repeat(13, 1fr); 
   gap: 12px;
-  margin-bottom: 20px;
-  font-size: 13px;
+  width: 100%;
 }
 
-.stock-info-grid div {
-  background-color: #13141F;
-  padding: 4px 12px;
-  border-radius: 6px;
-  text-align: left;
+.stock-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;
   white-space: nowrap;
+  margin-top:10px;
 }
 
-.price-blue {
-  color: #42a5f5;
+.label {
+  color: #99A1B7;
+  font-size: 13px;
+  font-family: Lexend;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.price-yellow {
+.value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.yellow {
   color: #F6B100;
+}
+
+.purple {
+  color: #9E63FF;
+}
+
+.blue {
+  color: #00CECE;
 }
 
 .white {
   color: #FFFFFF;
 }
 
-.purple {
-  color:#9E63FF;
+.option-icon {
+  width: 10px;
+  height: auto;
 }
-.blue {
-  color: #00CECE;
-}
-
-
-.label {
-  font-weight: bold;
-  margin-bottom: 4px;
-  display: flex;
-  align-items: center;
-  color:#99A1B7;
-  font-family: Lexend;
-  white-space: normal;
-  word-break: break-word;
-}
-
-.value {
-  font-size: 14px;
-  font-weight: 500;
-  color: #FFFFFF;
-  text-align: center;
-  white-space: normal;
-  word-break: break-word;
-  text-overflow: ellipsis;
-  padding: 2px 4px;
-  line-height: 1.3;
-  box-sizing: border-box;
-}
-
-
-
-.layout {
-  display: flex;
-  flex-direction: column;
-  padding: 4px 12px;
-  border-radius: 6px;
-  background-color: #1d2235;
-  box-sizing: border-box;
-  min-height: 20px;
-  height:20px;
-  margin-top: -17px;
-}
-
-
 
 
 /*RESPONSIVE*/
-@media (max-width: 1024px) {
-  .stock-info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 12px;
-  font-size: 13px;
-}
 
-.stock-info-grid div {
-  white-space: normal;
-  word-wrap: break-word;
-  word-break: break-word;
-  text-align: left;
-}
-
-
-  .value {
-    font-size: 13px;
-    white-space: normal;
-    text-align: left;
-  }
-
-  .label {
-    font-size: 12px;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  .layout {
-    height: 60px;
-      flex-direction: column;
+@media (max-width: 840px)
+{
+  .stock-chart {
+    display: none;
   }
 }
-
-@media (max-width: 640px) {
-  
-  .stock-info-grid {
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-}
-
-.stock-info-grid div {
-  white-space: normal;
-  word-wrap: break-word;
-  word-break: break-word;
-  text-align: left;
-}
-
-.value {
-    font-size: 13px;
-    white-space: normal;
-    text-align: left;
-  }
-
- .layout {
-   flex-direction: column;
- }
-
-
-}
-

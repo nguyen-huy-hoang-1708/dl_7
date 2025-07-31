@@ -1,11 +1,11 @@
 .order-form {
   background-color: #13141F;
   color: #ccc;
-  max-width: 320px;
   margin: 0px 8px;
   padding: 8px;
   border-radius: 10px;
   height: 100%;
+  max-width: 95%;
 }
 
 .order-form h3 {

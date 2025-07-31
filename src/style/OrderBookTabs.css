@@ -1,11 +1,10 @@
 body {
-  margin: 0;
   background-color: #13141F;
   color: #fff;
 }
 
 .order-book-tabs {
-  padding: 0px;
+  padding: 0 12px;
   font-size: 13px;
   background: #13141F;
   border-radius: 8px;
@@ -17,18 +16,18 @@ body {
   letter-spacing: 0%;
   vertical-align: middle;
   color: #78829D;
-  width: auto;
+  width: 1552px;
 }
 
 .tabs {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 .tabs button {
   background: none;
   border: none;
-  padding: 8px 16px;
+  padding: 0px 12px;
   cursor: pointer;
   color: #ccc;
   font-weight: 500;
@@ -48,63 +47,76 @@ table {
   background-color: #13141F;
   border-radius: 6px;
   overflow: hidden;
+  height: 575px;
 }
 
 thead {
   background-color: #141622;
   color: #99A1B7;
+  height: 32px;
 }
 
 th, td {
-  padding: 10px 12px;
+  padding: 0px 12px;
   border-bottom: 1px solid #2a2c3d;
   text-align: left;
   white-space: nowrap;
+  height: 32px !important;
 }
 
-tbody tr:hover {
-  background-color: #222436;
-}
+
+
+
+
+
 
 /* === Cột Lệnh (Long / Short) === */
 .long {
   color: #00c853;
   font-weight: bold;
+  height: 32px;
 }
 
 .short {
   color: #ef5350;
   font-weight: bold;
+  height: 32px;
 }
 
 /* === Cột Trạng thái === */
 .text-yellow {
   color: #F6B100;
   font-weight: bold;
+  height: 32px;
 }
 
 .text-orange {
   color: #FF6F1E;
   font-weight: bold;
+  height: 32px;
 }
 
 .text-blue {
   color: #1B84FF;
   font-weight: bold;
+  height: 32px;
 }
 
 .text-green {
   color: #17C653;
   font-weight: bold;
+  height: 32px;
 }
 
 .text-red {
   color: #F8285A;
   font-weight: bold;
+  height: 32px;
 }
 
 .text-white {
   color: #FFFFFF;
+  height: 32px;
 }
 
 /* === Icon và chức năng === */
@@ -126,12 +138,14 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 4px;
+  height: 32px;
 }
 
 
 .highlight-id {
   color: #1B84FF; 
   font-weight: bold;
+  height: 32px;
 }
 
 .action-icon {
@@ -195,9 +209,10 @@ td.actions-cell {
 }
 
 .full {
+  display: flex;
   width: 20px;
   height: 20px;
-  margin-left: 885px;
+  margin-left: auto;
   align-items: center;
   margin-top: 10px;
 }
@@ -244,9 +259,45 @@ td.actions-cell {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
+.order-book-tabs tr {
+  max-height: 32px !important;
+}
+
+.order-book-tabs td {
+  height: 32px !important;
+
+}
+
+/*.order-book-tabs table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+.order-book-tabs thead {
+  background-color: #141622;
+  color: #99A1B7;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.order-book-tabs tbody {
+  display: block;
+  height: 480px !important;
+  width: 100%;
+}*/
+
+.Hidden {
+  display: none;
+  width: 100%;
+}
+
 
 /*RESPONSIVE*/
-@media (max-width: 1024px) {
+@media (max-width: 1920px) {
   .order-book-tabs {
     width: 100%;
     padding: 8px;
@@ -260,19 +311,19 @@ td.actions-cell {
 
   .tabs button {
     font-size: 12px;
-    padding: 6px 10px;
+    padding: 0px 10px;
   }
 
   table {
     width: 100%;
-    table-layout: fixed; /* để cột co lại */
+    table-layout: fixed; 
   }
 
   th, td {
     word-wrap: break-word;
     white-space: normal; 
     font-size: 12px;
-    padding: 6px 8px;
+    padding: 0px 8px;
   }
 
   /* Cho các cột tự động chiếm không gian đều nhau */
@@ -293,4 +344,19 @@ td.actions-cell {
     margin: 0 auto;
     display: block;
   }
+}
+
+@media (max-width: 1324px)
+{
+  .tta, .ttb, .ttc, .ttd, .tte, .ttf, .th-with-icon, .row-icon, .highlight-id, .tr, .full, .action-icon {
+    display: none;
+}
+  .Hidden {
+    display: block;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
 }

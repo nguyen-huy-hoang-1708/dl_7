@@ -14,14 +14,14 @@ function App() {
   return (
     <div className="app-container">
       <TopNavbar />
-<div style={{ padding: 2 }}>
+<div style={{ padding: 0 }}>
   <MarketSummary />
 </div>
-<div style={{ padding: 2 }}>
+<div style={{ padding: 0 }}>
   <StockChart />
 </div>
   <div className="main-content">
-    <div className="left-column">
+    <div className="left-column" >
       <Bieudo />
       <OrderBookTabs />
     </div>

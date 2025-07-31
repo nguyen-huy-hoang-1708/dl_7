@@ -1,8 +1,8 @@
 import React from 'react';
 import '../style/MarketSummary.css';
-import Up from '../assets/Up.png';
-import Down from '../assets/Down.png';
-import vuong from '../assets/Vuong.png';
+import Up from '../assets/Up.svg';
+import Down from '../assets/Down.svg';
+import vuong from '../assets/Vuong.svg';
 
 const marketData = [
   {

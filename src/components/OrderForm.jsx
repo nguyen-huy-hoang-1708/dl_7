@@ -1,6 +1,6 @@
 import React  from 'react';
 import '../style/OrderForm.css';
-import Option from '../assets/Option.png';
+import Option from '../assets/Option.svg';
 
 function OrderForm() {
   return (

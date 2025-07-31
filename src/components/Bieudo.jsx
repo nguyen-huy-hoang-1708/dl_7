@@ -1,13 +1,13 @@
 import React from 'react';
 import '../style/Bieudo.css';
 import Bieu_do from '../assets/Bieu_do.jpg';
-import One from '../assets/One.png';
-import Two from '../assets/Two.png';
-import Three from '../assets/Three.png';
-import Four from '../assets/Four.png';
-import Five from '../assets/Five.png';
-import Six from '../assets/Six.png';
-import Quen from '../assets/Quen.png';
+import One from '../assets/One.svg';
+import Two from '../assets/Two.svg';
+import Three from '../assets/Three.svg';
+import Four from '../assets/Four.svg';
+import Five from '../assets/Five.svg';
+import Six from '../assets/Six.svg';
+import Quen from '../assets/Quen.svg';
 
 function Bieudo() {
   return (

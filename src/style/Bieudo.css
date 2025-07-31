@@ -10,9 +10,11 @@
   box-sizing: border-box;
   color: white;
   font-size: 14px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 70% 30%;
   border-radius: 8px;
   gap: 10px;
+  padding-left: 12px;
 }
 
 .bieudo-left {
@@ -22,7 +24,7 @@
   height: 208px;
   width:1102px;
   flex:1;
-  max-width: 0%;
+  width: 100%;
 }
 
 /* Container cho cột icon + ảnh biểu đồ */
@@ -42,7 +44,7 @@
 /* Giới hạn kích thước icon */
 .bieudo-icons-column img {
   width: 36px;
-  height: auto;
+  height: 208px;
   display: block;
   margin: 0 auto; 
 }
@@ -54,11 +56,12 @@
 
 .bieudo-image img {
   /*max-width: 53vw;*/
-  width: auto;
-  /*width: 1098px;*/
+  width: 100%;
+  /*width: 1098px;
   width: 53vw;
-  height: 208px; 
-  object-fit: fill;
+  height: 208px; */
+  height: 100%;
+  object-fit: contain;
   display: block;
   padding: 0px;
   margin-bottom: 0px;
@@ -69,13 +72,13 @@
 
 /* Cột nội dung bên phải */
 .bieudo-info-panel {
-  width: 360px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   height: 100%;         
   box-sizing: border-box;
-  padding: 8px 12px;     
+  padding: 0px 12px;     
   justify-content: space-between;
   border-radius: 8px;
   background: #13141F;

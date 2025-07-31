@@ -11,8 +11,8 @@
   position: relative;
   gap: 12px;
   box-sizing: border-box;
-  padding: 12px 16px;
-  height: 56px;
+  padding: 12px;
+  height: 44px;
 }
 
 .logo {
@@ -40,6 +40,7 @@
 
 
 .hi {
+  margin-top: -12px;
   color: #99A1B7;
   font-family: Lexend;
   font-weight: 500;
@@ -51,6 +52,7 @@
 }
 
 .ten {
+  margin-top: -12px;
   background: #24253C;
   padding: 8px 12px;
   border-radius: 9999px;
@@ -67,12 +69,17 @@
 }
 
 .Flag {
+    margin-top: -12px;
   background: #24253C;
   border-radius: 9999px;
   display: flex;
   padding: 8px 12px;
   align-items: center;
   gap: 8px;
+}
+
+.Out {
+  margin-top:-8px;
 }
 
 .Flags {
@@ -83,6 +90,7 @@
 }
 
 .navbar-left {
+  margin-top: -22px;
   display: flex;
   align-items: center;
   flex: 1;
@@ -121,7 +129,7 @@
 
 
 /*RESPONSIVE*/
-@media (max-width: 1024px) {
+@media (max-width: 1324px) {
 
   .top-navbar {
     align-items: flex-start;
@@ -149,16 +157,17 @@
     min-height: 32px;
   }
 
-  .hi {
-    padding: 12px 14px;
-  }
-
-  .SignOut {
-    padding: 12px 14px;
+  .hi, .Out {
+    display:none;
   }
 
   .logo {
+    object-fit: contain;
+    padding: 20px;
     margin-bottom: 8px;
+  }
+  .menu-tabss {
+    display: none;
   }
 }
 
@@ -195,5 +204,8 @@
     margin-bottom: 8px;
     align-items: center;
     text-align: center;
+  }
+  .menu-tabss {
+    display: none;
   }
 }
