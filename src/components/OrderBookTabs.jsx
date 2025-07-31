@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/OrderBookTabs.css';
-import checkbox from '../assets/Checkbox.png'; 
-import nocheckbox from '../assets/Nocheckbox.png';
+import checkbox from '../assets/Checkbox.svg'; 
+import nocheckbox from '../assets/Nocheckbox.svg';
 import Trash from '../assets/Trash.svg'; 
 import edit from '../assets/Edit.svg';   
 import kinhlup from '../assets/Kinhlup.svg';
