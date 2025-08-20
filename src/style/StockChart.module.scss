@@ -1,0 +1,78 @@
+.stockChart {
+  background-color: #13141F;
+  padding-top: 0px;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  height: 60px;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  width: 1896px;
+  height: 60px;
+}
+
+.stockRowScroll {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 12px;
+}
+
+.stockItem {
+  display: flex;
+  width: 144px;
+  height: 36px;
+  flex-direction: column;
+  align-items: left;       
+  justify-content: center;
+  white-space: nowrap;
+  margin: 12px 0;
+}
+
+.label {
+  color: #99A1B7;
+  font-size: 13px;
+  font-family: Lexend;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.yellow {
+  color: #F6B100;
+}
+
+.purple {
+  color: #9E63FF;
+}
+
+.blue {
+  color: #00CECE;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.optionIcon {
+  width: 10px;
+  height: auto;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 840px) {
+  .stockChart {
+    display: none;
+  }
+}

@@ -1,0 +1,360 @@
+body {
+  background-color: #13141F;
+  color: #fff;
+}
+
+.orderBookTabs {
+  padding: 0px;
+  font-size: 13px;
+  background: #13141F;
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #78829D;
+  width: 1552px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderTabs {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #13141F;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #141622;
+  color: #99A1B7;
+  height: 32px;
+}
+
+th, td {
+  padding: 0px 12px;
+  border-bottom: 1px solid #2a2c3d;
+  text-align: left;
+  white-space: nowrap;
+  height: 32px !important;
+}
+
+
+
+
+
+
+
+/* === Cột Lệnh (Long / Short) === */
+.long {
+  color: #00c853;
+  font-weight: bold;
+  height: 32px;
+}
+
+.short {
+  color: #ef5350;
+  font-weight: bold;
+  height: 32px;
+}
+
+/* === Cột Trạng thái === */
+.textYellow {
+  color: #F6B100;
+  font-weight: bold;
+  height: 32px;
+}
+
+.textOrange {
+  color: #FF6F1E;
+  font-weight: bold;
+  height: 32px;
+}
+
+.textBlue {
+  color: #1B84FF;
+  font-weight: bold;
+  height: 32px;
+}
+
+.textGreen {
+  color: #17C653;
+  font-weight: bold;
+  height: 32px;
+}
+
+.textRed {
+  color: #F8285A;
+  font-weight: bold;
+  height: 32px;
+}
+
+.textWhite {
+  color: #FFFFFF;
+  height: 32px;
+}
+
+/* === Icon và chức năng === */
+.headerIcon, .rowIcon, .actionIcon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.kinhlup, .funnel {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.thWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+}
+
+
+.highlightId {
+  color: #1B84FF; 
+  font-weight: bold;
+  height: 32px;
+}
+
+.actionIcon {
+  cursor: pointer;
+  margin-right: 24px; 
+  vertical-align: middle;
+  
+}
+
+td.actionsCell {
+  text-align: right;
+}
+
+.actionIcon:last-child {
+  margin-right: 0; 
+}
+
+.thWithIcon img {
+  margin-left: 4px; 
+  vertical-align: middle;
+}
+
+ .divider {
+  display:flex;
+  align-items: center;
+  margin-left: 12px;
+  width: 1552px;
+  height: 1px;
+  background-color:#1E1E25;
+  margin-top: -1px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 395px;
+  height: 100%;
+  justify-content: center;
+}
+
+.thuong {
+  background: linear-gradient(to top, rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+  color: #9580FF;
+  border: none;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 192px;
+  height: 42px;
+  border-bottom: 2px solid #6142FE;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex;
+}
+
+.dieukien {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background: none;
+  width: 203px;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.full {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.tta {
+  color: #fff;
+  width: 136px;
+}
+.ttb {
+  color: #fff;
+  width: 80px;
+}
+.ttc {
+  color: #fff;
+  width: 80px;
+}
+.ttd {
+  color: #fff;
+  width: 56px;
+}
+.tte {
+  color: #fff;
+  width: 80px;
+}
+
+.ttf {
+  color: #fff;
+  width: 80px;
+}
+.ttg {
+  color: #fff;
+  width: 80px;
+}
+.tth {
+    color: #fff;
+  width: 232px;
+}
+
+.order {
+  width: 80px;
+}
+
+.orderBookTabs table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.order-book-tabs tr {
+  max-height: 32px !important;
+}
+
+.order-book-tabs td {
+  height: 32px !important;
+
+}
+
+/*.order-book-tabs table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+.order-book-tabs thead {
+  background-color: #141622;
+  color: #99A1B7;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}*/
+
+.order-book-tabs tbody {
+  display: block;
+  height: 192px !important;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1600px) {
+  .orderBookTabs {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+
+  table {
+    width: 100%;
+    table-layout: fixed; 
+  }
+
+  th, td {
+    word-wrap: break-word;
+    white-space: normal; 
+    font-size: 12px;
+    padding: 0px 8px;
+  }
+
+  /* Cho các cột tự động chiếm không gian đều nhau */
+  .tta, .ttb, .ttc, .ttd, .tte, .ttf, .ttg, .tth, .order {
+    width: auto;
+    min-width: 60px;
+    max-width: 100px;
+  }
+
+  .headerIcon,
+  .actionIcon,
+  .full {
+    width: 14px;
+    height: 14px;
+  }
+
+  .full {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 1324px)
+{
+  .tta, .ttb, .ttc, .ttd, .tte, .ttf, .thWithIcon, .rowIcon, .highlightId, .tr, .full, .actionIcon {
+    display: none;
+}
+  .hidden {
+    display: block;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+}

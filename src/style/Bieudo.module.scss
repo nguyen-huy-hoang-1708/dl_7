@@ -1,0 +1,355 @@
+
+.body {
+    background: #13141F;
+}
+.bieudo {
+  display: flex;
+  width: 1554px;
+  height: 504px;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  background-color: black;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.bieudoLeft {
+  display: flex;
+  flex-direction: row;
+  height: 504px;
+  width:1102px;
+}
+
+/* Container cho cột icon + ảnh biểu đồ */
+.bieudoImage {
+  display: flex;
+  height: 468px;
+  width: 1057px;
+}
+
+.size {
+  height: 468px;
+  width: 1057px;
+}
+
+
+.bieudoIconRow {
+  display: flex;
+  height: 35px;
+  width: 1053px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RowOne {
+  display: flex;
+  width: 128px;
+  margin-left: 9px;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.RowTwo {
+  display: flex;
+  width: 134px;
+  margin-left: 10px;
+  margin-right: 10px; 
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.RowThfree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.item {
+  display: inline-flex;    
+  align-items: center;
+  gap: 6px;                 
+  line-height: 1;           
+}
+
+.Rows {
+  opacity: 0.5;
+}
+
+
+.RowEnd {
+  display: flex;
+  width: 335px;
+  gap: 57px;
+  margin-left: 29px;
+}
+/* Cột icon dọc */
+.bieudoIconColumn {
+  display: flex;
+  flex-direction: column;
+  background: #1E1E25;
+  gap: 0px;
+  height: 504px; 
+  width: 44px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  width: 1057px;
+  height: 504px;
+}
+
+
+
+.option {
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 18px;
+  height: 35px;
+}
+
+
+
+/* Cột nội dung bên phải */
+.bieudoInfoPanel {
+  width: 440px;
+  height: 504px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0px 0px;    
+  margin-right: 12px;
+  padding-left: 12px; 
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #13141F;
+  /*position: relative;*/
+}
+
+
+/* Tabs */
+.bieudoTabs {
+  display: flex;
+  border-bottom: 1px solid #2d2f4a;
+  margin-bottom: 1px;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  height: 44px;
+  align-items: center;
+  /*position: absolute;*/
+}
+
+
+.bieudoTabOne {
+  color: #fff;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  background: #13141F;
+  width: 74px;
+}
+
+.bieudoTabTwo {
+  color: #fff;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  background: #13141F;
+  width: 146px;
+}
+
+.bieudoTabThree {
+  color: #fff;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  background: #13141F;
+  width: 118px;
+}
+
+.bieudoTabActive {
+  color: #9580FF;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+  border-bottom: 2px solid #914bfe;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  width: 79px;
+  height:42px;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Nội dung tĩnh */
+.bieudoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 12px;
+  height: 460px;
+}
+
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0;
+  color: #99A1B7;
+  height: 20px;
+  margin-top: 0px;
+}
+
+.infoRow span:last-child {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.info {
+  margin-left: 4px;
+}
+
+.xanh {
+  color: #17C653;
+  padding-right: 12px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1024px) {
+  .bieudo {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .bieudoLeft {
+    width: 100%;
+    flex-direction: row;
+    max-width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+
+  .bieudoIconColumn {
+    display: flex;
+    flex-direction: row;/**/
+    justify-content: space-around;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .bieudoIconColumn img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bieudoImage {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+    max-width: 100%; 
+    height: 100%;
+    overflow-x:hidden;
+  }
+
+  .size {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+  }
+
+  .bieudoInfoPanel {
+    margin-left: 0;
+    width: 100%;
+    margin-right: 12px;
+  }
+
+  .bieudoTabs {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 4px;
+    grid-template-columns: repeat(2, 1fr); 
+    display: grid;
+  }
+
+
+  .bieudoTab,
+  .bieudoTabActive {
+    width: 48%;
+    padding: 10px;
+    height: auto;
+    font-size: 13px;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-top: 0;
+  }
+
+  .infoRow span:last-child {
+    padding-right: 0;
+  }
+
+  .xanh {
+    padding-right: 0;
+  }
+
+  @media (max-width: 768px) {
+  .bieudo {
+    flex-direction: column;
+  }
+
+  .bieudoInfoPanel {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px;
+  }
+
+  .bieudoImage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bieudoLeft {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+}

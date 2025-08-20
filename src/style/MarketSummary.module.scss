@@ -1,0 +1,140 @@
+.marketSummary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  font-family: Lexend;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  height: 92px;
+  width: 1896px;
+  margin: 12px;
+}
+
+.marketItem {
+  width: 369.6px;
+  height: 92px;
+  background: #13141F;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 8px;
+  flex: 1 1 calc(20% - 12px); 
+  min-width: 200px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.row1 {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 8px;
+ }
+.row2 { 
+  width: 100%;
+  height: 16px;
+  margin-bottom: 8px;
+}
+.row3 { 
+  width: 100%;
+  height: 16px;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.value {
+  font-size: 12px;
+  text-align: right;
+}
+
+.values {
+  color: white;
+}
+
+.shares,
+.volume {
+  font-size: 12px;
+  color: #99A1B7;
+}
+
+.status {
+  font-size: 12px;
+  color: #99A1B7;
+  margin-top: 4px;
+}
+
+.statsIcons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Lexend;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
+  object-fit: contain;
+}
+
+.vuongIcon {
+  height: 14px;
+  width: 14px;
+  object-fit: contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1679px) {
+  .marketSummary {
+    height: auto;
+  }
+  .marketItem {
+    flex: 1 1 calc(33.33% - 16px); 
+  }
+}
+
+@media (max-width: 1023px) {
+  .marketItem {
+    flex: 1 1 calc(33.33% - 16px); 
+  }
+}
+
+@media (max-width: 767px) {
+  .marketItem {
+    flex: 1 1 calc(33.33% - 16px); 
+  }
+  .status {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .marketItem {
+    flex: 1 1 100%; 
+  }
+  .status {
+    display: none;
+  }
+}

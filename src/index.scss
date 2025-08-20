@@ -1,0 +1,46 @@
+
+
+.app-container {
+  width: 1920px; 
+  height: 1080px;
+  margin: 0 auto; 
+  padding: 0px; 
+  box-sizing: border-box;
+  background: black;
+}
+
+.MarkerSummary {
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-column {
+    width: 1552px;
+    height: 796px;
+  }
+  .right-column {
+    width: 332px;
+    height: 796px;
+  }
+
+
+  .footer {
+    width: 1920px;
+    height: 40px;
+  }
+@media (max-width: 768px) {
+  .right-column {
+    width: 100%;
+  }
+}
+/* Responsive layout */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    display: flex;
+    width: 1896px;
+    height: 796px;
+  }
+}
