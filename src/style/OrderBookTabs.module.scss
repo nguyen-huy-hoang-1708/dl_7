@@ -13,10 +13,12 @@ body {
   letter-spacing: 0%;
   vertical-align: middle;
   color: #78829D;
-  width: 1552px;
+  width: 1540px;
   height: 280px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  margin-left: 12px;
 }
 
 .orderTabs {
@@ -164,10 +166,11 @@ td.actionsCell {
   display:flex;
   align-items: center;
   margin-left: 12px;
-  width: 1552px;
+  width: 1528px;
   height: 1px;
   background-color:#1E1E25;
   margin-top: -1px;
+  margin-bottom: 16px;
 }
 
 .title {

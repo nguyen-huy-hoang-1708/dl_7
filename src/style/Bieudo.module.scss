@@ -135,7 +135,7 @@
 }
 
 
-/* Tabs */
+/* Tabs Tài sản */
 .bieudoTabs {
   display: flex;
   border-bottom: 1px solid #2d2f4a;
@@ -187,7 +187,7 @@
   width: 118px;
 }
 
-.bieudoTabActive {
+.bieudoTabActiveOne {
   color: #9580FF;
   font-weight: 500;
   font-style: Medium;
@@ -202,7 +202,64 @@
   border-right: none;
   width: 79px;
   height:42px;
-  gap: 24px;
+  gap: 0px;
+  align-items: center;
+}
+
+.bieudoTabActiveTwo {
+  color: #9580FF;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+  border-bottom: 2px solid #914bfe;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  width: 74px;
+  height:42px;
+  gap: 0px;
+  align-items: center;
+}
+
+.bieudoTabActiveThree {
+  color: #9580FF;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+  border-bottom: 2px solid #914bfe;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  width: 146px;
+  height:42px;
+  gap: 0px;
+  align-items: center;
+}
+
+.bieudoTabActiveFour {
+  color: #9580FF;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(rgba(97, 66, 254, 0),rgba(97, 66, 254, 1));
+  border-bottom: 2px solid #914bfe;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  width: 118px;
+  height:42px;
+  gap: 0px;
   align-items: center;
 }
 
@@ -241,6 +298,203 @@
   color: #17C653;
   padding-right: 12px;
 }
+
+
+/*SCSS tab 10Giá*/
+
+/* ===== Tab 10 Giá ===== */
+
+.tenGiaWrap {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 404px;
+  height: 460px;
+  margin-right: 12px;
+}
+
+.tenGiadiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.titleOne {
+  width: 80px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: BT Beau Sans;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color:#99A1B7;
+}
+.titleTwo {
+  width: 128px;
+  height:20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: BT Beau Sans;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color:#99A1B7;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* title */
+
+.tenGiadiv > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #13141F;
+  text-align: center;
+}
+
+.tenGiadiv > div:first-child div {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.tenGiadiv > div:first-child div:last-child {
+  border-right: none;
+}
+
+/* Content */
+.tenGiadiv > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.tenGiadiv > div:nth-child(2) > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid #13141F;
+  align-items: center;
+}
+
+.tenGiadiv > div:nth-child(2) > div:last-child {
+  border-bottom: none;
+}
+
+/* Các ô volume */
+.bidVol, .askVol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 28px;
+}
+
+.bidVol div, .askVol div {
+  padding: 0px 0px;
+  color: #ffffff;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+}
+
+/* Các ô giá với dải nâu */
+.bidPrice, .askPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  width: 128px;
+  height: 28px;
+  text-align: center;
+  background: #24253C;
+  color: #17C653
+}
+
+
+/* Viền chia cột */
+.tenGiadiv > div:nth-child(2) > div > div {
+  border-right: 1px solid #13141F;
+  border-bottom: 1px solid #13141F;
+}
+
+.tenGiadiv > div:nth-child(2) > div > div:last-child {
+  border-right: none;
+}
+
+/*Dải màu nâu nằm dưới số liệu*/
+.bidPrice, .askPrice {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > * {
+    position: relative;
+    z-index: 2; 
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1; 
+    border-radius: 2px;
+  }
+}
+
+.bidPrice::before {
+  right: 0;
+  width: var(--bidw, 0%);
+  background-color: #8B5E3C;
+  opacity: 0.6;
+}
+
+.askPrice::before {
+  left: 0;
+  width: var(--askw, 0%);
+  background-color: #8B5E3C;
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*RESPONSIVE*/
 @media (max-width: 1024px) {

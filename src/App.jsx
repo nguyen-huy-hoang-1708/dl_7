@@ -1,11 +1,11 @@
 import React from 'react';
-import TopNavbar from './components_man1/TopNavbar.jsx';
-import MarketSummary from './components_man1/MarketSummary.jsx';
-import StockChart from './components_man1/StockChart.jsx';
-import OrderForm from './components_man1/OrderForm.jsx';
-import OrderBookTabs from './components_man1/OrderBookTabs.jsx';
-import Bieudo from './components_man1/Bieudo.jsx';
-import Footer from './components_man1/Footer.jsx';
+import TopNavbar from './components/TopNavbar.jsx';
+import MarketSummary from './components/MarketSummary.jsx';
+import StockChart from './components/StockChart.jsx';
+import OrderForm from './components/OrderForm.jsx';
+import OrderBookTabs from './components/OrderBookTabs.jsx';
+import Bieudo from './components/Bieudo.jsx';
+import Footer from './components/Footer.jsx';
 import './index.scss';
 import './style/Fonts.module.scss';
 
