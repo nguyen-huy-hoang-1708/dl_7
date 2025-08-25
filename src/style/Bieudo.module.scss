@@ -316,7 +316,7 @@
 .tenGiadiv {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 404px;
 }
 
 .title {
@@ -405,13 +405,21 @@ color:#99A1B7;
 }
 
 /* Các ô volume */
-.bidVol, .askVol {
+.bidVol {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80px;
   height: 28px;
 }
+
+.askVol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 28px;
+  }
 
 .bidVol div, .askVol div {
   padding: 0px 0px;
@@ -427,7 +435,7 @@ color:#99A1B7;
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  width: 128px;
+  width: 120px;
   height: 28px;
   text-align: center;
   background: #24253C;
@@ -482,9 +490,130 @@ color:#99A1B7;
 }
 
 
+/*SCSS tab "Lịch sử giao dịch" */
+
+.historyWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 404px;
+  height: 16px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  color: #99A1B7;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+}
+
+.titleOnes {
+  width: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.titleTwos, .titleThrees, .titleFours, .titleFives {
+  width: 70px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.titleFives, .dataFive {
+  margin-left: 16px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 416px;
+  height: 420px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 404px;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+.dataOne {
+  width: 100px;
+  display: flex;
+  justify-content: left;
+  height: 36px;
+  align-items: center;
+}
+.dataTwo, .dataThree, .dataFour, .dataFive {
+  width: 70px;
+  display: flex;
+  justify-content: right;
+  height: 36px;
+  align-items: center;
+}
+
+.dataTwo, .dataThree {
+  color: #17C653;
+  width: 70px;
+  display: flex;
+  justify-content: right;
+  height: 36px;
+  align-items: center;
+}
+.dataTwos, .dataThrees {
+  width: 70px;
+  display: flex;
+  justify-content: right;
+  height: 36px;
+  align-items: center;
+  color: #F8285A;
+}
+
+.body > .row:nth-child(even)  { background: transparent; }         
+.body > .row:nth-child(odd) { background: rgba(255,255,255,.03); } 
 
 
+/*SCSS cho tab Mã phái sinh*/
 
+.dataGreenOne {
+  display: flex;
+  width: 100px;
+  height: 36px;
+  justify-content: left;
+  color: #17C653;
+  align-items: center;
+}
+.dataGreenTwo, .dataGreenThree, .dataRed, .dataFive {
+  display: flex;
+  width: 80px;
+  height: 36px;
+  justify-content: right;
+  align-items: center;
+}
+.dataGreenTwo, .dataGreenThree {
+  color: #17C653;
+}
+.dataRed {
+  color: #F8285A;
+}
+.dataFive {
+  padding-right: 8px;
+}
 
 
 
@@ -497,113 +626,129 @@ color:#99A1B7;
 
 
 /*RESPONSIVE*/
-@media (max-width: 1024px) {
+/* ===================== RESPONSIVE ONLY ===================== */
+
+/* <= 1024px: trải rộng theo hàng, co giãn 100%, không méo ảnh */
+@media (max-width: 1600px) {
   .bieudo {
-    flex-direction: row;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 12px;
   }
 
   .bieudoLeft {
     width: 100%;
-    flex-direction: row;
     max-width: 100%;
     display: flex;
+    flex-direction: row;
     gap: 16px;
     flex-wrap: wrap;
   }
 
-
   .bieudoIconColumn {
     display: flex;
-    flex-direction: row;/**/
+    flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    height: auto;
     padding: 8px;
   }
 
-  .bieudoIconColumn img {
+  .bieudoImage {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .bieudoImage {
+    display: block;
     padding: 0;
     margin: 0;
-    width: 100%;
-    display: block;
-    max-width: 100%; 
-    height: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
   }
 
   .size {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    height: auto;           /* tránh méo hình */
+    object-fit: contain;    /* hoặc 'cover' tùy ý */
     display: block;
   }
 
   .bieudoInfoPanel {
-    margin-left: 0;
     width: 100%;
+    height: auto;
+    margin-left: 0;
     margin-right: 12px;
+    padding: 12px;
   }
 
+  /* Tabs xếp 2 cột, dùng đúng class đang có */
   .bieudoTabs {
-    flex-wrap: wrap;
-    height: auto;
-    gap: 4px;
-    grid-template-columns: repeat(2, 1fr); 
     display: grid;
-  }
-
-
-  .bieudoTab,
-  .bieudoTabActive {
-    width: 48%;
-    padding: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
     height: auto;
+  }
+  .bieudoTabOne,
+  .bieudoTabTwo,
+  .bieudoTabThree,
+  .bieudoTabActiveOne,
+  .bieudoTabActiveTwo,
+  .bieudoTabActiveThree,
+  .bieudoTabActiveFour {
+    width: 100%;
+    height: auto;
+    padding: 10px;
     font-size: 13px;
   }
 
-  .infoRow {
+  .tenGiaWrap,
+  .historyWrap {
+    width: 100%;
+    height: auto;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    margin-top: 0;
   }
 
-  .infoRow span:last-child {
-    padding-right: 0;
+  /* Lịch sử giao dịch co giãn full chiều ngang */
+  .historyWrap .header,
+  .historyWrap .row {
+    width: 100%;
   }
+}
 
-  .xanh {
-    padding-right: 0;
-  }
-
-  @media (max-width: 768px) {
+/* <= 768px: chuyển cột, panel 100%, cột lịch sử giao dịch dùng % cho 5 cột */
+@media (max-width: 1024px) {
   .bieudo {
     flex-direction: column;
   }
 
+  .bieudoLeft {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+  }
+
   .bieudoInfoPanel {
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     padding: 12px;
   }
 
-  .bieudoImage img {
-    width: 100%;
-    height: auto;
-  }
+  /* 5 cột trong header/data của Lịch sử giao dịch dùng % để khỏi tràn */
+  .titleOnes { width: 40%; }  /* Thời gian */
+  .titleTwos,
+  .titleThrees,
+  .titleFours,
+  .titleFives { width: 15%; }
 
-  .bieudoLeft {
-    flex-direction: row;
-    width: 100%;
-    max-width: 100%;
-  }
-}
+  .dataOne { width: 40%; }
+  .dataTwo,
+  .dataThree,
+  .dataFour,
+  .dataFive,
+  .dataTwos,
+  .dataThrees { width: 15%; }
 
+  /* Nếu vẫn có nguy cơ tràn ngang trên màn rất hẹp: mở scroll ngang nhẹ */
+  .historyWrap { overflow-x: auto; }
 }

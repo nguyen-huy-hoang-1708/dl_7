@@ -282,20 +282,147 @@ const spreadWidthPct = r => Math.round(((r.askPrice - r.bidPrice) / maxSpread) *
           </div>
         )}
 
-        {tab === 'history' && (
-          <div className={styles.bieudoContent}>
-            <div>10:02 • Khớp Long 1 HĐ @ 1323.5</div>
-            <div>09:58 • Đặt Short 1 HĐ @ 1325.0</div>
-          </div>
-        )}
+      {tab === "history" && (
+  <div className={styles.historyWrap}>
+    <div className={styles.panel}>
+      <div className={styles.header}>
+        <div className={styles.titleOnes}>Thời gian</div>
+        <div className={styles.titleTwos}>Giá</div>
+        <div className={styles.titleThrees}>+/-</div>
+        <div className={styles.titleFours}>KL</div>
+        <div className={styles.titleFives}>KL tích lũy</div>
+      </div>
 
-        {tab === 'derivatives' && (
-          <div className={styles.bieudoContent}>
-            <div className={styles.infoRow}><span>Mã</span><span>VN30F2501</span></div>
-            <div className={styles.infoRow}><span>Ngày ĐH</span><span>12-04-2024</span></div>
-            <div className={styles.infoRow}><span>Bước giá</span><span>0.1</span></div>
-          </div>
-        )}
+      <div className={styles.body}>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwos}>1,414.1</div>
+          <div className={styles.dataThrees}>-4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwos}>1,414.1</div>
+          <div className={styles.dataThrees}>-3.8</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataOne}>14:45:00</div>
+          <div className={styles.dataTwo}>1,414.1</div>
+          <div className={styles.dataThree}>4.1</div>
+          <div className={styles.dataFour}>1</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+
+        {tab === "derivatives" && (
+  <div className={styles.historyWrap}>
+    <div className={styles.panel}>
+      <div className={styles.header}>
+        <div className={styles.titleOnes}>Mã</div>
+        <div className={styles.titleTwos}>Giá</div>
+        <div className={styles.titleThrees}>+/-</div>
+        <div className={styles.titleFours}>Lệch</div>
+        <div className={styles.titleFives}>KL</div>
+      </div>
+
+      <div className={styles.body}>
+        <div className={styles.row}>
+          <div className={styles.dataGreenOne}>41L1F7000</div>
+          <div className={styles.dataGreenTwo}>1,414.1</div>
+          <div className={styles.dataGreenThree}>4.1</div>
+          <div className={styles.dataRed}>-5.25</div>
+          <div className={styles.dataFive}>956</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataGreenOne}>VN30F2506</div>
+          <div className={styles.dataGreenTwo}>1,414.5</div>
+          <div className={styles.dataGreenThree}>6.5</div>
+          <div className={styles.dataRed}>-4.86</div>
+          <div className={styles.dataFive}>186,564</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataGreenOne}>VN30F2509</div>
+          <div className={styles.dataGreenTwo}>1,409.6</div>
+          <div className={styles.dataGreenThree}>6.7</div>
+          <div className={styles.dataRed}>-9.76</div>
+          <div className={styles.dataFive}>197</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.dataGreenOne}>VN30F2512</div>
+          <div className={styles.dataGreenTwo}>1,411.5</div>
+          <div className={styles.dataGreenThree}>5</div>
+          <div className={styles.dataRed}>-7.86</div>
+          <div className={styles.dataFive}>220</div>
+        </div>
+        </div>
+      </div>
+    </div>
+)}
+
+
       </div>
     </div>
   );
