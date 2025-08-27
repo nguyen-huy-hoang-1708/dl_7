@@ -1,3 +1,4 @@
+html, body { overflow-x: hidden; } 
 
 
 .app-container {
@@ -30,17 +31,54 @@
     width: 1920px;
     height: 40px;
   }
-@media (max-width: 768px) {
+
+
+@media (max-width: 1600px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;  
+    gap: 12px;             
+    position: relative;       
+    z-index: 0;
+    width: 96vw;
+    height: auto;
+  }
+
+  .left-column,
   .right-column {
-    width: 100%;
+    position: static !important;   
+    float: none !important;       
+    clear: none !important;
+    transform: none !important;    
+    z-index: auto !important;     
+    width: 96vw !important;
+    height: auto !important;
+    min-width: 0 !important;      
+    min-height: 0 !important;
+    margin: 0 !important;          
+  }
+
+  .right-column .order-form,
+  .right-column > * {
+    position: static !important;
+    height: auto !important;
+    max-height: none !important;
+    inset: auto !important;        
+  }
+
+  .right-column { display: block !important; }
+
+  .StockChart,
+  .OrderBookTabs,
+  .MarketSummary,
+  .footer {
+    display: block !important;
+    width: 96vw;
+    height: auto;
   }
 }
-/* Responsive layout */
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: row;
-    display: flex;
-    width: 1896px;
-    height: 796px;
-  }
+
+img, canvas, svg, video {
+  max-width: 96vw;
+  height: auto;
 }

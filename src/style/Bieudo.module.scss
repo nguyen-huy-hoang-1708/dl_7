@@ -626,66 +626,67 @@ vertical-align: middle;
 
 
 /*RESPONSIVE*/
-/* ===================== RESPONSIVE ONLY ===================== */
 
-/* <= 1024px: trải rộng theo hàng, co giãn 100%, không méo ảnh */
 @media (max-width: 1600px) {
   .bieudo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    gap: 12px;
   }
 
   .bieudoLeft {
-    width: 100%;
-    max-width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    gap: 16px;
     flex-wrap: wrap;
   }
 
-  .bieudoIconColumn {
+  .bieudoIconColumn{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    width: 96vw;
     height: auto;
-    padding: 8px;
   }
 
+  .bieudoIconRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: calc(100vw - 24px);
+    height: auto;
+  }
+  .Row {
+    margin-left: -4px;
+  }
+
+
   .bieudoImage {
-    width: 100%;
+    width: 90vw;
     height: auto;
     display: block;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
   }
 
   .size {
-    width: 100%;
-    height: auto;           /* tránh méo hình */
-    object-fit: contain;    /* hoặc 'cover' tùy ý */
+    width: 100vw;
+    height: auto;           
+    object-fit: contain;    
     display: block;
   }
 
   .bieudoInfoPanel {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    margin-right: 12px;
-    padding: 12px;
+    width: calc(100vw + 24px);
+    height: auto;;
+    margin-left: -24px;
   }
 
-  /* Tabs xếp 2 cột, dùng đúng class đang có */
   .bieudoTabs {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 100vw;
     height: auto;
   }
   .bieudoTabOne,
@@ -695,60 +696,44 @@ vertical-align: middle;
   .bieudoTabActiveTwo,
   .bieudoTabActiveThree,
   .bieudoTabActiveFour {
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 10px;
     font-size: 13px;
   }
 
   .tenGiaWrap,
-  .historyWrap {
-    width: 100%;
+  .historyWrap,
+  .bieudoContent {
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
   }
 
-  /* Lịch sử giao dịch co giãn full chiều ngang */
   .historyWrap .header,
   .historyWrap .row {
-    width: 100%;
+    width: 100vw;
+  }
+
+  .bieudoContent{
+    width: 99vw;
+  }
+  .tengiaWrap, .historyWrap {
+    display: flex;
+    justify-content: center;
+  }
+  .titleOnes,.titleTwos,.titleThrees,.titleFours,.titleFives {
+    margin-left: 24px;
+    width: 10%;
+  }
+  .dataOne,.dataTwo,.dataThree,.dataFour,.dataFive,.dataTwos,.dataThrees {
+    margin-left: 24px;
+    width: 10%;
+  }
+  .dataGreenOne,.dataGreenTwo,.dataGreenThree,.dataRed,.dataFive {
+    margin-left: 24px;
+    width: 10%;
   }
 }
 
-/* <= 768px: chuyển cột, panel 100%, cột lịch sử giao dịch dùng % cho 5 cột */
-@media (max-width: 1024px) {
-  .bieudo {
-    flex-direction: column;
-  }
-
-  .bieudoLeft {
-    width: 100%;
-    max-width: 100%;
-    flex-direction: row;
-  }
-
-  .bieudoInfoPanel {
-    width: 100%;
-    margin: 0;
-    padding: 12px;
-  }
-
-  /* 5 cột trong header/data của Lịch sử giao dịch dùng % để khỏi tràn */
-  .titleOnes { width: 40%; }  /* Thời gian */
-  .titleTwos,
-  .titleThrees,
-  .titleFours,
-  .titleFives { width: 15%; }
-
-  .dataOne { width: 40%; }
-  .dataTwo,
-  .dataThree,
-  .dataFour,
-  .dataFive,
-  .dataTwos,
-  .dataThrees { width: 15%; }
-
-  /* Nếu vẫn có nguy cơ tràn ngang trên màn rất hẹp: mở scroll ngang nhẹ */
-  .historyWrap { overflow-x: auto; }
-}

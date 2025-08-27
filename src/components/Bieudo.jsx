@@ -278,9 +278,9 @@ const spreadWidthPct = r => Math.round(((r.askPrice - r.bidPrice) / maxSpread) *
   ))}
 </div>
 
-            </div>
-          </div>
-        )}
+</div>
+</div>
+)}
 
       {tab === "history" && (
   <div className={styles.historyWrap}>

@@ -272,21 +272,6 @@ td.actionsCell {
 
 }
 
-/*.order-book-tabs table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 6px;
-  overflow: hidden;
-  table-layout: fixed;
-}
-
-.order-book-tabs thead {
-  background-color: #141622;
-  color: #99A1B7;
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}*/
 
 .order-book-tabs tbody {
   display: block;
@@ -304,8 +289,10 @@ td.actionsCell {
 /*RESPONSIVE*/
 @media (max-width: 1600px) {
   .orderBookTabs {
-    width: 100%;
+    width: 100vw;
     padding: 8px;
+    display: flex;
+    height: auto;
   }
 
   .tabs {
@@ -316,7 +303,7 @@ td.actionsCell {
 
 
   table {
-    width: 100%;
+    width: 100vw;
     table-layout: fixed; 
   }
 
@@ -343,7 +330,7 @@ td.actionsCell {
 
   .full {
     margin: 0 auto;
-    display: block;
+    display: none;
   }
 }
 

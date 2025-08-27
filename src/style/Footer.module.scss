@@ -67,7 +67,7 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 8px;
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
 
@@ -81,11 +81,6 @@
   .footerRight {
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .User {
-    width: 20px;
-    height: auto;
   }
 }
 
@@ -94,7 +89,7 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 8px;
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
 
@@ -108,10 +103,5 @@
   .footerRight {
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .User {
-    width: 20px;
-    height: auto;
   }
 }

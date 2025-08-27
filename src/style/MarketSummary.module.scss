@@ -11,7 +11,7 @@
   letter-spacing: 0%;
   text-align: center;
   height: 92px;
-  width: 1896px;
+  width: 1884px;
   margin: 12px;
 }
 
@@ -109,32 +109,12 @@
 @media (max-width: 1679px) {
   .marketSummary {
     height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-  .marketItem {
-    flex: 1 1 calc(33.33% - 16px); 
-  }
+ .marketItem {
+  width: 100%;
+}
 }
 
-@media (max-width: 1023px) {
-  .marketItem {
-    flex: 1 1 calc(33.33% - 16px); 
-  }
-}
-
-@media (max-width: 767px) {
-  .marketItem {
-    flex: 1 1 calc(33.33% - 16px); 
-  }
-  .status {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .marketItem {
-    flex: 1 1 100%; 
-  }
-  .status {
-    display: none;
-  }
-}
